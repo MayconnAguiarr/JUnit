@@ -1,4 +1,4 @@
-package classes;
+package classesParaTeste;
 
 public class Calcular {
 
