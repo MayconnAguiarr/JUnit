@@ -28,34 +28,39 @@ public class Televisao {
 		}
 	}
 	
-	public void addCanal() throws Exception{
+	public void proximoCanal() throws Exception{
 		if(estaLigada && canal < canalMaximo){
 		   canal +=1;			
 		}else{
-			throw new Exception("Televisão desligada ou atingido o limite maxímo de canais");
+			throw new Exception("Televisão desligada ou não há um proxímo canal");
 		}		
 	}
 	
 	
-	public void subCanal() throws Exception{
+	public void canalAnterior() throws Exception{
 		if(estaLigada && canal > 1){
 			canal -=1;
 		}else{
-			throw new Exception("Televisão desligada ou atingido o limite mínimo de canais");
+			throw new Exception("Televisão desligada ou não há um canal anterior");
 		}
 	}
 	
 	
-	public void addVolume(){
+	public void aumentarVolume() throws Exception{
 		if(estaLigada && volume < volumeMaximo){
 			volume += 1;
-		}		
+		}else{
+			throw new Exception("Televisão desligada ou volume maxímo atingido");
+		}
 	}
 	
-	public void subVolume(){
+	public void diminuirVolume() throws Exception{
 		if(estaLigada && volume > 0){
 			volume -= 1;
-		}		
+		}else{
+			throw new Exception("Televisão desligada ou volume mínimo atingido");
+		}
+		
 	}
 	
 
