@@ -1,3 +1,3 @@
 # JUnitTests
 
-# Repositório criado para fins didáticos.
+Repositório criado para fins didáticos.
